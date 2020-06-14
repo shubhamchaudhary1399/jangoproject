@@ -1,0 +1,17 @@
+{% extends 'userTemplates/layout.html' %}
+{% load static %}
+
+{% block title %}Dashboard | jangoproject{% endblock %}
+{% block head_includes %}
+<link rel="stylesheet" href="{% static 'git-auth.css' %}">
+{% endblock %}
+{% load crispy_forms_tags %}
+{% block page_content %}
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <button type="button" name="button" class="btn btn-default my-btn">Link your Github Account</button>
+        </div>
+    </div>
+</div>
+{% endblock %}

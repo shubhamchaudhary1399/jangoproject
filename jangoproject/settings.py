@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'register.apps.RegisterConfig',
+    'gitusers.apps.GitusersConfig',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -133,4 +134,7 @@ STATICFILES_DIRS = (
 )
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/gitusers/git-auth/'
+LOGOUT_URL = '/logout/'
+LOGOUT_REDIRECT_URL = '/login/'

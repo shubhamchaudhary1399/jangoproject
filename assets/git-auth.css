@@ -1,11 +1,3 @@
-body{
-	font-family: 'Raleway', sans-serif;
-	background: url('background.jpg');
-	background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-}
-
 .btn:focus, .btn:active {
 	outline: none !important;
 	transition: 0.5s ease;
@@ -16,12 +8,19 @@ input:focus, input:active, textarea:focus, textarea:active, select:focus, select
 	outline: none !important;
 	border-color: #e74e4b !important;
 	transition: 0.5s ease;
-  box-shadow: 0 0 5px rgb(231,78,75)!important;
+    box-shadow: 0 0 5px rgb(231,78,75)!important;
 }
 
-.my-card{
+.my-btn{
+	background: linear-gradient(to right, #fb8133, #e74e4b);
+	border: 1px solid #f2734c;
+	border-radius: 2px;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.my-btn:hover{
 	background: linear-gradient(to right, #e74e4b, #fb8133);
-    font-weight: bold;
-    color: white;
-    letter-spacing: 0.4px;
+	color:#FFFFFF;
+	transition: 0.5s ease-in-out;
 }
