@@ -1,0 +1,23 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+.btn:focus, .btn:active {
+	outline: none !important;
+	transition: 0.5s ease;
+	box-shadow: none !important;
+}
+
+input:focus, input:active, textarea:focus, textarea:active, select:focus, select:active{
+	outline: none !important;
+	border-color: #e74e4b !important;
+	transition: 0.5s ease;
+  box-shadow: 0 0 5px rgb(231,78,75)!important;
+}
+
+.my-card{
+	background: linear-gradient(to right, #e74e4b, #fb8133);
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.4px;
+}

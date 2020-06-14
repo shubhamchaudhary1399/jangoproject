@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Register with us | OAuth Project{% endblock %}
+{% block head_includes %}
+<link rel="stylesheet" href="{% static 'login.css' %}">
+{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container py-4">
+		<div class="card" style="max-width: 600px; margin: auto;">
+      <div class="card-header text-center my-card">Register</div>
+
+      <div class="card-body">
+        <form method="post" class="form-group">
+					{% csrf_token %}
+          {{form | crispy}}
+					<div class="">
+						<input type="submit" name="" value="Register" class="btn btn-success">
+						<a href="{% url 'login' %}" class="btn btn-primary float-right">Already have an account. Login</a>
+					</div>
+        </form>
+			</div>
+		</div>
+</div>
+{% endblock %}
