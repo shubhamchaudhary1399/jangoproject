@@ -54,7 +54,7 @@ class CreateWebHook(LoginRequiredMixin,GitAuthRequiredMixin,generic.edit.Process
                 "pull_request"
               ],
               "config": {
-                "url": "http://127.0.0.1:8000/gitrepos/webhook/"+end_sec+"/",
+                "url": "https://jangoproject-production.herokuapp.com/gitrepos/webhook/"+end_sec+"/",
                 "content_type": "json",
                 "insecure_ssl": "0"
               }

@@ -42,7 +42,7 @@ class GitAuthView(LoginRequiredMixin,generic.TemplateView):
         git_acc.state = get_state_string()
         git_acc.save()
         a = (('client_id','07708964cec37e18bed5'),
-            ('redirect_uri','http://127.0.0.1:8000/gitusers/git-auth/verify/'),
+            ('redirect_uri','https://jangoproject-production.herokuapp.com/gitusers/git-auth/verify/'),
             ('login',self.request.user.username),('scope','repo'),
             ('state', git_acc.state))
         context['redirect_url'] = urllib.parse.urlencode(a)
@@ -57,7 +57,7 @@ class GitAuthVerify(LoginRequiredMixin,RedirectView):
                 'client_id': '07708964cec37e18bed5',
                 'client_secret': 'a5d1d09e36af8048d2378fb2eedd058498fcb796',
                 'code': self.request.GET.get('code'),
-                'redirect_uri':'http://127.0.0.1:8000/gitusers/git-auth/verify/',
+                'redirect_uri':'https://jangoproject-production.herokuapp.com/gitusers/git-auth/verify/',
                 'state':git_acc.state
             }
         r = requests.post('https://github.com/login/oauth/access_token', data=data, headers={'Accept':'application/json'})
