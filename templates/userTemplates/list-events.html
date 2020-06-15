@@ -26,8 +26,8 @@
                  </div>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
-                  <button onclick="myFunction();" id="btngit" class="btn btn-default my-btn" type="button" data-toggle="collapse" data-target="#multiCollapse{{forloop.counter}}" aria-expanded="false" aria-controls="multiCollapseExample2">
-                    Full Details
+                  <button onclick="myFunction();" class="btn btn-default my-btn" type="button" data-toggle="collapse" data-target="#multiCollapse{{forloop.counter}}" aria-expanded="false" aria-controls="multiCollapseExample2">
+                    Full Detail
                   </button>
                 </div>
               </div>
@@ -67,12 +67,8 @@
 </div>
 <script type="text/javascript">
   function myFunction(){
-    var x = document.getElementById("btngit");
-    if (x.innerHTML === "Hide Details") {
-      x.innerHTML = "Full Details";
-    }else {
-      x.innerHTML = "Hide Details";
-    }
+    if (this.value=="Full Detail") this.value = "Hide Detail";
+    else this.value = "Full Detail";
   }
 
 </script>
