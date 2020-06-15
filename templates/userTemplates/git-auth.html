@@ -10,6 +10,13 @@
 <div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-8 text-center">
+          {% if messages %}
+              {% for message in messages %}
+                <div class="alert alert-danger" role="alert">
+                  {{message}}
+                </div>
+                {% endfor %}
+          {% endif %}
           <a href="https://github.com/login/oauth/authorize/?{{redirect_url}}" class="btn btn-default my-btn">Link your Github Account</a>
         </div>
     </div>

@@ -26,6 +26,7 @@ urlpatterns = [
     path('logout/',auth_views.LogoutView.as_view(),name='logout'),
     path('register/', v.register , name='register'),
     path('gitusers/', include('gitusers.urls')),
+    path('gitrepos/', include('gitrepos.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
