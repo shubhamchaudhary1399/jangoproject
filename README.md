@@ -18,12 +18,12 @@ then run server on localhost
 
 ## Deployment
 
-This project is already deployed on the link (https://jangoproject-production.herokuapp.com/login)
+This project is already deployed on the link (https://jangoproject-production.herokuapp.com)
 
 ## Built With
 
-- [Django] (https://www.mongodb.com/) - The Pyhton web framework used
+- [Django] (https://docs.djangoproject.com/en/3.0/) - The Python web framework used
 
 ## Authors
 
-- **HShubham Chaudhary** - _Initial work_ - [shubhamchaudhary1399](https://github.com/shubhamchaudhary1399)
+- **Shubham Chaudhary** - _Initial work_ - [shubhamchaudhary1399](https://github.com/shubhamchaudhary1399)
