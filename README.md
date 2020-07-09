@@ -1,28 +1,29 @@
-#Project Title
+# Project Title
+
 GitHub OAuth Web Application
 
-##Getting Started
+## Getting Started
+
 Clone the repository into you machine:
 
+```
 git@github.com:shubhamchaudhary1399/jangoproject.git
-Installing
-Move into the cloned folder
+```
 
-Install the dependencies by running the following command.
+### Installing
 
-npm install
-After the installation, run the server by using the following command. You should get confirmation log on the terminal once the server is successfully running.
+Move into the cloned folder into the python environment
+Install django within the environment
+then run server on localhost
 
-npm start
-Open up your browser and go to (http://localhost:3000/contact/view)
+## Deployment
 
-Deployment
-This project is already deployed on the link (https://desolate-springs-54571.herokuapp.com)
+This project is already deployed on the link (https://jangoproject-production.herokuapp.com/login)
 
-Built With
-Express - The web framework used
-MongoDB - The database used
-Authors
-Himanshu Roy - Initial work - himanshu-roy
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+## Built With
+
+- [Django] (https://www.mongodb.com/) - The Pyhton web framework used
+
+## Authors
+
+- **HShubham Chaudhary** - _Initial work_ - [shubhamchaudhary1399](https://github.com/shubhamchaudhary1399)
