@@ -23,6 +23,7 @@ This project is already deployed on the link (https://jangoproject-production.he
 ## Built With
 
 - [Django] (https://docs.djangoproject.com/en/3.0/) - The Python web framework used
+- [PostgreSQL] (https://www.postgresql.org/) - The Database used
 
 ## Authors
 
